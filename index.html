@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Alvian</title>
+    <link rel="icon" href="https://qu.ax/UWjdC.jpeg" type="image/jpeg">
+    <style>
+        :root {
+            --primary-color: #5e35b1;
+            --secondary-color: #3949ab;
+            --accent-color: #7c4dff;
+            --bg-color: #ffffff;
+            --text-color: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+
+        html, body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 650px;
+            background: #ffffff;
+            padding: 30px;
+            margin: 20px auto;
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
+            border-radius: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            flex: 1;
+            width: 90%;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            position: relative;
+            font-size: 2.2rem;
+        }
+
+        h1::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: var(--accent-color);
+            border-radius: 3px;
+        }
+
+        .profile-img {
+            display: block;
+            margin: 20px auto;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid var(--primary-color);
+            object-fit: cover;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section-title {
+            font-weight: 600;
+            font-size: 1.3rem;
+            margin: 25px 0 15px;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+        }
+
+        .section-title::before {
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 20px;
+            background: var(--accent-color);
+            margin-right: 10px;
+            border-radius: 4px;
+        }
+
+        .info-item {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+            font-size: 1rem;
+        }
+
+        .info-item::before {
+            content: '•';
+            color: var(--accent-color);
+            position: absolute;
+            left: 0;
+            font-size: 1.2rem;
+        }
+
+        .footer {
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            width: 100%;
+            margin-top: auto;
+        }
+
+        .footer p {
+            font-weight: normal;
+            letter-spacing: 0.5px;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>CV</h1>
+            <img class="profile-img" src="https://qu.ax/ZdUBF.jpeg" alt="Foto Profil Alvian">
+        </div>
+
+        <div class="section">
+            <div class="section-title">Data Diri</div>
+            <p class="info-item">Nama: Alvian</p>
+            <p class="info-item">Alamat: Kec. Weru</p>
+            <p class="info-item">No Telepon: 6285842624025</p>
+            <p class="info-item">Email: pianyah12@gmail.com</p>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Jenjang Pendidikan</div>
+            <p class="info-item">TK</p>
+            <p class="info-item">SD</p>
+            <p class="info-item">SMP</p>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Pengalaman Organisasi</div>
+            <p class="info-item">Pramuka</p>
+            <p class="info-item">Karang Taruna</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 Alvian. All Rights Reserved.</p>
+    </div>
+</body>
+</html>
